@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<books>
+    <book id="001">
+        <title>核心Java</title>
+        <price>150</price>
+    </book>
+    
+    <book id="002">
+        <title>疯狂Java讲义</title>
+        <price>120</price>
+    </book>
+</books>
+ 
