@@ -11,6 +11,7 @@
 
     <modules>
         <module>imitate-rpc</module>
+        <module>jvm-practise</module>
     </modules>
 
 </project>
