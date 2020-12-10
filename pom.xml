@@ -16,6 +16,7 @@
         <module>elasticsearch-study</module>
         <module>java-tool</module>
         <module>rpc-study</module>
+        <module>thinking-in-spring</module>
     </modules>
 
 </project>
