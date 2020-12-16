@@ -13,8 +13,12 @@
         <property name="name" value="planning"/>
     </bean>
 
-    <bean id="superClass" class="com.planning.thinking.in.spring.ioc.overview.domain.SuperUser" parent="commonUser" primary="true">
+    <bean id="superUser" class="com.planning.thinking.in.spring.ioc.overview.domain.SuperUser" parent="commonUser" primary="true">
         <property name="address" value="nanjing"/>
+    </bean>
+
+    <bean id="objectFactory" class="org.springframework.beans.factory.config.ObjectFactoryCreatingFactoryBean">
+        <property name="targetBeanName" value="commonUser"/>
     </bean>
 
 </beans>
