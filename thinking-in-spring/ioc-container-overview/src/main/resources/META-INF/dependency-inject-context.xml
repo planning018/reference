@@ -2,16 +2,22 @@
 <beans
         xmlns="http://www.springframework.org/schema/beans"
         xmlns:context="http://www.springframework.org/schema/context"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
         xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
-        https://www.springframework.org/schema/context/spring-context.xsd">
+        https://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
 
     <import resource="dependency-lookup-context.xml"/>
 
-    <bean id="userRepository" class="com.planning.thinking.in.spring.ioc.overview.repository.UserReponsitory" autowire="byType">
-
+    <bean id="userRepository" class="com.planning.thinking.in.spring.ioc.overview.repository.UserRepository" autowire="byType">
+        <property name="users">
+            <util:list>
+                <ref bean="commonUser"/>
+                <ref bean="superUser" />
+            </util:list>
+        </property>
     </bean>
 
 </beans>
