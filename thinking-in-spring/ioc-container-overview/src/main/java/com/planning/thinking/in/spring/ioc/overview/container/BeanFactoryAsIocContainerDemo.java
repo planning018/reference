@@ -14,7 +14,7 @@ import java.util.Map;
  * @author yxc
  * @since 2020-12-22 20:26
  **/
-public class BeanFactoryAsIoCContainerDemo {
+public class BeanFactoryAsIocContainerDemo {
 
     public static void main(String[] args) {
         // 创建 BeanFactory 容器
