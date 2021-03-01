@@ -17,6 +17,7 @@
         <module>java-tool</module>
         <module>rpc-study</module>
         <module>thinking-in-spring</module>
+        <module>rules-engine</module>
     </modules>
 
 </project>
